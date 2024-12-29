@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="plugin.video.latinsports" name="Latin Sports" version="1.0.6" provider-name="Gigoro">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.dateutil" />
+    <import addon="script.module.codequick" version="0.9.10" />
+    <import addon="script.module.beautifulsoup4" version="4.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_ES">Addon de kodi simple para ver retrasmiciones en vivo de diferentes paginas de deportes</summary>
+    <description lang="es_ES">Addon para ver retrasmiciones en vivo de diferentes paginas de deportes</description>
+    <disclaimer lang="es_ES">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider. This addon acts merely as a browser for sites publically available on the internet which the author has no control of.</disclaimer>
+    <language>es</language> 
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+    <source>https://github.com/gigoro33/plugin.video.LatinSports</source>
+    <assets>
+      <icon>resources/images/icon.png</icon>
+      <fanart>resources/images/fanart.jpg</fanart>
+      <screenshot>resources/images/screenshot-1.jpg</screenshot>
+      <screenshot>resources/images/screenshot-2.jpg</screenshot>
+    </assets>
+    <news>1.0.6 Se añade el canal Futbol libre HD</news>
+    <news>1.0.5 Se Se corrige la reprodución de algunos canales en la opción de agenda deportiva para tucanaldeportivo.org</news>
+    <news>1.0.4 Se añade opcion de agenda deportiva para tucanaldeportivo.org</news>
+    <news>1.0.3 Se añade opciones de reproduciion para teleXtrema y se corrige el charset</news>
+    <news>1.0.2 Se refactoriza el codigo y se simplifica se cambia el dominio tucanaldeportivo.com por tucanaldeportivo.org</news>
+    <news>1.0.1 Se añade la pagina tucanaldeportivo.com</news>
+    <news>1.0.0 Desplegada la version incial</news>
+  </extension>
+</addon><addon id="script.module.cache" name="cache" version="1.0.5" provider-name="fraser">
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Simple HTTP Cache using sqlite3</summary>
+        <description lang="en_GB">Stores cached data in sqlite3.Blobs. Calculates lifetime, freshness as virtual columns.
+Obeys cache control directives, immutable, no-store, etc. Supports etag, last_modified, etc for validation.
+Can be used as a generic key/blob data store when used without directives
+        </description>
+        <license>MIT</license>
+        <platform>all</platform>
+        <email>fraser.chapman@gmail.com</email>
+        <source>https://github.com/FraserChapman/script.module.cache</source>
+        <news>v1.0.5 (14-7-24) - "Update xbmc.translatePath to xbmcvfs.translatePath.</news>
+        <news>v1.0.3 (18-7-19) - Fixes python version error</news>
+    </extension>
+</addon><addon id="plugin.caracol.tv" name="Caracol TV" version="0.1.8" provider-name="gigoro33">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.codequick" />
+        <import addon="plugin.video.youtube" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="es_ES">Busca y reproduce contenido desde le sitio web de Caracol Television</summary>
+        <description lang="es_ES">Caracol Televisión es un canal de televisión abierta colombiano, propiedad de Valorem.</description>
+        <language>es</language>
+        <platform>all</platform>
+        <license>MIT</license>
+        <website>https://www.caracoltv.com/</website>
+        <source>https://github.com/gigoro33/plugin.caracol.tv/</source>
+        <disclaimer lang="es_ES">Ni este complemento ni su autor están afiliados de ninguna manera a Caracol Televisión</disclaimer>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+        </assets>
+    </extension>
+</addon><addon id="plugin.video.dw" name="Deutsche Welle" version="1.0.1" provider-name="fraser">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1" />
+        <import addon="script.module.routing" version="0.2.0" />
+        <import addon="script.module.beautifulsoup4" version="4.3.2" />
+        <import addon="script.module.requests" version="2.12.4" />
+        <import addon="script.module.cache" version="1.0.4" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Search and play free content from the Deutsche Welle website.</summary>
+        <description lang="en_GB">Deutsche Welle is Germany’s international broadcaster.
+Watch live TV and a range of programmes available via the DW website </description>
+        <language>en de es ar</language>
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=345450</forum>
+        <website>https://www.dw.com/</website>
+        <email>fraser.chapman@gmail.com</email>
+        <source>https://github.com/FraserChapman/plugin.video.dw</source>
+        <news>v1.0.0 (14-7-19) - Initial version</news>
+        <news>v1.0.1 (14-7-19) - Update kodi to version 19 or newer</news>
+        <disclaimer lang="en_GB">Neither this addon nor its author are in anyway affiliated with Deutsche Welle</disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+            <screenshot>resources/media/ss1.jpg</screenshot>
+            <screenshot>resources/media/ss2.jpg</screenshot>
+            <screenshot>resources/media/ss3.jpg</screenshot>
+            <screenshot>resources/media/ss4.jpg</screenshot>
+            <screenshot>resources/media/ss5.jpg</screenshot>
+        </assets>
+    </extension>
+</addon></addons>
