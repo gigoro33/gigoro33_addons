@@ -41,21 +41,6 @@
             <icon>resources/media/icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="script.module.cache" name="cache" version="1.0.5" provider-name="fraser">
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Simple HTTP Cache using sqlite3</summary>
-        <description lang="en_GB">Stores cached data in sqlite3.Blobs. Calculates lifetime, freshness as virtual columns.
-Obeys cache control directives, immutable, no-store, etc. Supports etag, last_modified, etc for validation.
-Can be used as a generic key/blob data store when used without directives
-        </description>
-        <license>MIT</license>
-        <platform>all</platform>
-        <email>fraser.chapman@gmail.com</email>
-        <source>https://github.com/FraserChapman/script.module.cache</source>
-        <news>v1.0.5 (14-7-24) - "Update xbmc.translatePath to xbmcvfs.translatePath.</news>
-        <news>v1.0.3 (18-7-19) - Fixes python version error</news>
-    </extension>
 </addon><addon id="plugin.video.dw" name="Deutsche Welle" version="1.0.1" provider-name="fraser">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
@@ -91,7 +76,7 @@ Watch live TV and a range of programmes available via the DW website </descripti
             <screenshot>resources/media/ss5.jpg</screenshot>
         </assets>
     </extension>
-</addon><addon id="plugin.video.latinsports" name="Latin Sports" version="1.0.6" provider-name="Gigoro">
+</addon><addon id="plugin.video.latinsports" name="Latin Sports" version="1.0.7" provider-name="Gigoro">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.dateutil" />
@@ -115,6 +100,7 @@ Watch live TV and a range of programmes available via the DW website </descripti
       <screenshot>resources/images/screenshot-1.jpg</screenshot>
       <screenshot>resources/images/screenshot-2.jpg</screenshot>
     </assets>
+    <news>1.0.7 Se añade el canal tv por internet, se corrige el canal futbol libre HD</news>
     <news>1.0.6 Se añade el canal Futbol libre HD</news>
     <news>1.0.5 Se Se corrige la reprodución de algunos canales en la opción de agenda deportiva para tucanaldeportivo.org</news>
     <news>1.0.4 Se añade opcion de agenda deportiva para tucanaldeportivo.org</news>
@@ -123,4 +109,19 @@ Watch live TV and a range of programmes available via the DW website </descripti
     <news>1.0.1 Se añade la pagina tucanaldeportivo.com</news>
     <news>1.0.0 Desplegada la version incial</news>
   </extension>
+</addon><addon id="script.module.cache" name="cache" version="1.0.5" provider-name="fraser">
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Simple HTTP Cache using sqlite3</summary>
+        <description lang="en_GB">Stores cached data in sqlite3.Blobs. Calculates lifetime, freshness as virtual columns.
+Obeys cache control directives, immutable, no-store, etc. Supports etag, last_modified, etc for validation.
+Can be used as a generic key/blob data store when used without directives
+        </description>
+        <license>MIT</license>
+        <platform>all</platform>
+        <email>fraser.chapman@gmail.com</email>
+        <source>https://github.com/FraserChapman/script.module.cache</source>
+        <news>v1.0.5 (14-7-24) - "Update xbmc.translatePath to xbmcvfs.translatePath.</news>
+        <news>v1.0.3 (18-7-19) - Fixes python version error</news>
+    </extension>
 </addon></addons>
