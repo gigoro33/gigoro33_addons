@@ -41,7 +41,7 @@
             <icon>resources/media/icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.dw" name="Deutsche Welle" version="0.0.1" provider-name="gigoro33">
+</addon><addon id="plugin.video.dw" name="Deutsche Welle" version="0.0.7" provider-name="gigoro33">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
         <import addon="script.module.codequick" />
